@@ -1,0 +1,27 @@
+plugins {
+    id 'java'
+    id 'java-library'
+    id 'application'
+}
+
+group = 'com.beliefdrivendesing'
+version = '0.0.1-SNAPSHOT'
+description = 'Simple Log Aggregator'
+
+testing {
+    suites {
+        test {
+            useJUnitJupiter('5.14.1')
+        }
+    }
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
+}
+
+application {
+    mainClass = 'blog.UUIDv7'
+}
